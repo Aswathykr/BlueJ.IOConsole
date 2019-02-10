@@ -49,6 +49,8 @@ public class IOConsole {
      * @return user's input as String
      */
     public String getStringInput(String prompt, Object... args) {
+        prompt = String.format(prompt, args);
+        out.println(prompt);
         return scanner.next();
     }
 
@@ -58,6 +60,8 @@ public class IOConsole {
      * @return user's input as integer
      */
     public Integer getIntegerInput(String prompt, Object... args) {
+        prompt = String.format(prompt, args);
+        out.println(prompt);
         return scanner.nextInt();
     }
 
@@ -67,6 +71,8 @@ public class IOConsole {
      * @return user's input as double
      */
     public Double getDoubleInput(String prompt, Object... args) {
+        prompt = String.format(prompt, args);
+        out.println(prompt);
         return scanner.nextDouble();
     }
 
@@ -76,6 +82,8 @@ public class IOConsole {
      * @return user's input as float
      */
     public Float getFloatInput(String prompt, Object... args) {
+        prompt = String.format(prompt, args);
+        out.println(prompt);
         return scanner.nextFloat();
     }
 
@@ -85,6 +93,8 @@ public class IOConsole {
      * @return user's input as long
      */
     public Long getLongInput(String prompt, Object... args) {
+        prompt = String.format(prompt, args);
+        out.println(prompt);
         return scanner.nextLong();
     }
 }
